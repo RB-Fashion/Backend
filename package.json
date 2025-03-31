@@ -1,0 +1,22 @@
+{
+  "name": "my-nodejs-mysql-app",
+  "version": "1.0.0",
+  "description": "A Node.js application that connects to a MySQL database.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
