@@ -20,4 +20,3 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.send('Welcome to the Home Page!');
 });
-
