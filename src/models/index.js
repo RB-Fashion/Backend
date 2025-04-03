@@ -1,6 +1,7 @@
 const { sequelize, DataTypes } = require('../config/db.config');
 
 const Production = require('./production')(sequelize, DataTypes);
+const users = require("./users")(sequelize, DataTypes);
 
 sequelize.sync({ alter: true }) // Sync changes to DB
     .then(() => console.log("Database synced!"))
