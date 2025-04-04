@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         timestamps: true,
         freezeTableName: true,
-        tableName: "userName"
+        tableName: "users"
     });
 
     return Users; // Return the correct model

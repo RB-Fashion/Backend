@@ -7,4 +7,4 @@ sequelize.sync({ alter: true }) // Sync changes to DB
     .then(() => console.log("Database synced!"))
     .catch(err => console.log("Sync error: ", err));
 
-module.exports = { sequelize, Production };
+module.exports = { sequelize, Production, users };

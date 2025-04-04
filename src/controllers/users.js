@@ -23,8 +23,12 @@ var usersAPI = {
 // Create a new users entry
 async function createUsers(req, resp) {
     try {
+        console.log("Received data:", req.body);
         req.body['createdAt'] = Sequelize.fn('NOW');
         req.body['createdBy'] = req.headers['userauthid'];
+
+        console.log("Models:", model);
+console.log("Users Model:", model.users);
 
         let users = await model.users.create(req.body);
         return resp.status(201).send(users);

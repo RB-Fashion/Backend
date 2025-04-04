@@ -23,6 +23,7 @@ var productionAPI = {
 // Create a new production entry
 async function createProduction(req, resp) {
     try {
+        console.log('@@@@@ create production')
         req.body['createdAt'] = Sequelize.fn('NOW');
         req.body['createdBy'] = req.headers['userauthid'];
 
