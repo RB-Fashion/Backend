@@ -1,4 +1,4 @@
-const _Parties = require('../controllers/Parties');
+const _Parties = require('../controllers/parties');
 
 module.exports = function (appObj) {
     appObj.get("/Parties/list", _Parties.getPartiesList);
