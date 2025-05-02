@@ -3,8 +3,12 @@ const { sequelize, DataTypes } = require('../config/db.config');
 const Production = require('./production')(sequelize, DataTypes);
 const users = require("./users")(sequelize, DataTypes);
 
+const parties = require("./parties")(sequelize, DataTypes);
+const Invoice = require("./invoice")(sequelize, DataTypes);
+const Payment = require("./payment")(sequelize, DataTypes);
+
 sequelize.sync({ alter: true }) // Sync changes to DB
     .then(() => console.log("Database synced!"))
     .catch(err => console.log("Sync error: ", err));
 
-module.exports = { sequelize, Production, users };
+module.exports = { sequelize, Production, users,parties, Invoice, Payment };

@@ -5,5 +5,9 @@ const router = express.Router();
 require("./production")(router);
 require("./users")(router);
 
+require("./parties")(router);
+require("./invoices")(router);
+require("./payments")(router);
+
 // Export router
 module.exports = router;
