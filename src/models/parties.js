@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         timestamps: false, // Disable default createdAt and updatedAt
         freezeTableName: true,
-        tableName: "Parties",
+        tableName: "parties",
     });
 
     return Parties;
